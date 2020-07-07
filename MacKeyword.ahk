@@ -37,6 +37,10 @@ XButton1::^#Right
 
 XButton2::^#Left
 
+^q::Send !{F4}
+
+^m::WinMinimize,A
+
 F19::Run "https://wyagd001.github.io/zh-cn/docs/KeyList.htm"
 
 #If isActiveWin("chrome.exe")
