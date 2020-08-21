@@ -29,18 +29,35 @@
 
 ; -------------------- Script -------------------- ;
 
+; LAlt::LControl
+
+; Win to Ctrl
 LControl::LWin
 
+; Ctrl to Win
 LWin::LControl
 
+; Previous desktop
 XButton1::^#Right
 
+; Next desktop
 XButton2::^#Left
 
+; Window exit
 ^q::Send !{F4}
 
+; Window minimize
 ^m::WinMinimize,A
 
+; Text editor
+^Left::Send {Home}
+^Right::Send {End}
+^Up::Send ^{Home}
+^Down::Send ^{End}
+^+Left::Send +{Home}
+^+Right::Send +{End}
+
+; Document of autohotkey
 F19::Run "https://wyagd001.github.io/zh-cn/docs/KeyList.htm"
 
 #If isActiveWin("chrome.exe")
@@ -51,5 +68,6 @@ F19::Run "https://wyagd001.github.io/zh-cn/docs/KeyList.htm"
 
 isActiveWin(processName) {
     WinGet, winProcessName, ProcessName, A
+;   MsgBox %winProcessName%
     return (winProcessName = processName)
 }
