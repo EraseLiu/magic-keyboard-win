@@ -32,10 +32,13 @@
 ; LAlt::LControl
 
 ; Win to Ctrl
-LControl::LWin
+LAlt::LControl
 
 ; Ctrl to Win
-LWin::LControl
+LWin::LAlt
+
+; Ctrl to Win
+LControl::LWin
 
 ; Previous desktop
 XButton1::^#Right
