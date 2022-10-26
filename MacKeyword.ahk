@@ -58,7 +58,8 @@ XButton2::^#Left
 ^+Right::Send +{End}
 
 ; Document of autohotkey
-F19::Run "https://wyagd001.github.io/zh-cn/docs/KeyList.htm"
+F18::Run "https://wyagd001.github.io/zh-cn/docs/KeyList.htm"
+F19::Suspend
 
 #If isActiveWin("chrome.exe")
 ^+h::Send !{Home}
